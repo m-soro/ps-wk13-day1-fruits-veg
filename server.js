@@ -288,6 +288,7 @@ app.get("vegetables/:id", async (req, res) => {
   }
 });
 
+// IF SOMEONE FORKED OR CLONE AND THEY USE A DIFFERENT PORT
 app.listen(process.env.PORT || 8000, () => {
   console.log("listening");
 });

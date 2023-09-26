@@ -20,6 +20,8 @@ const Vegetable = require("./models/vegetables.js");
 app.use(express.urlencoded({ extended: false }));
 // USE METHOD OVERRIDE FOR FORM TO CREATE A DELETE REQUEST
 app.use(methodOverride("_method"));
+// tells express to try to match requests with files in the directory called 'public'
+app.use(express.static("public"));
 
 // ADD VIEW TEMPLATE - ALWAYS ABOVE ROUTES
 app.set("view engine", "jsx");
